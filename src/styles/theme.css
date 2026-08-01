@@ -1,0 +1,25 @@
+:root {
+  --bg: #0a0a0b;
+  --bg-elevated: #111114;
+  --panel: #141418;
+  --panel-soft: #1c1c22;
+  --text: #f5f5f7;
+  --text-soft: #a8a8b3;
+  --primary: #b84dff;
+  --primary-strong: #d27aff;
+  --primary-dim: color-mix(in oklab, var(--primary) 22%, transparent);
+  --border: #2a2a33;
+  --border-strong: #3d3d4a;
+  --success: #6ee7a8;
+  --warning: #f0c674;
+  --container: 1120px;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius: 4px;
+  --hero-glow: radial-gradient(
+    ellipse 80% 55% at 50% -10%,
+    color-mix(in oklab, var(--primary) 28%, transparent),
+    transparent 70%
+  );
+  --grid-line: color-mix(in oklab, var(--primary) 8%, transparent);
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "diseno-web",
+    "title": "DiseñoWeb",
+    "description": {
+      "en": "Repository for web design class activities and experiments.",
+      "es": "Repositorio para actividades y clases de diseño web."
+    },
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "repositoryUrl": "https://github.com/Sastiazaran/Dise-oWeb"
+  },
+  {
+    "slug": "deeptoolbox",
+    "title": "DeepVisualizationToolbox",
+    "description": {
+      "en": "Deep visualization project exploring neural networks.",
+      "es": "Proyecto de visualización profunda con redes neuronales."
+    },
+    "tech": ["Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/DeepVisualizationToolbox"
+  },
+  {
+    "slug": "java-raytracer",
+    "title": "javaRaytracer",
+    "description": {
+      "en": "Java raytracer focused on graphics fundamentals.",
+      "es": "Raytracer en Java enfocado en fundamentos de gráficos."
+    },
+    "tech": ["Java"],
+    "repositoryUrl": "https://github.com/Sastiazaran/javaRaytracer"
+  },
+  {
+    "slug": "modeling-webgl",
+    "title": "modelingSoftwareWebGL",
+    "description": {
+      "en": "3D modeling software built with WebGL.",
+      "es": "Software de modelado 3D construido con WebGL."
+    },
+    "tech": ["JavaScript", "WebGL"],
+    "repositoryUrl": "https://github.com/Sastiazaran/modelingSoftwareWebGL"
+  },
+  {
+    "slug": "water-drop",
+    "title": "waterDrop",
+    "description": {
+      "en": "Unity water-drop experiment with ShaderLab.",
+      "es": "Proyecto de gota de agua en Unity con ShaderLab."
+    },
+    "tech": ["C#", "Unity", "ShaderLab"],
+    "repositoryUrl": "https://github.com/Sastiazaran/waterDrop"
+  },
+  {
+    "slug": "conway-life",
+    "title": "conwaysGameOfLife",
+    "description": {
+      "en": "Educational Conway's Game of Life implementation.",
+      "es": "Implementación del Juego de la Vida con enfoque educativo."
+    },
+    "tech": ["Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/conwaysGameOfLife"
+  },
+  {
+    "slug": "compilator",
+    "title": "Compilator",
+    "description": {
+      "en": "First compiler phase built for class.",
+      "es": "Primera fase de compilador para clase."
+    },
+    "tech": ["Java"],
+    "repositoryUrl": "https://github.com/Sastiazaran/Compilator"
+  },
+  {
+    "slug": "advanced-parallel-programming",
+    "title": "AdvancedParallelProgramming",
+    "description": {
+      "en": "Advanced parallel programming coursework project.",
+      "es": "Proyecto de la clase de programación paralela avanzada."
+    },
+    "tech": ["Cuda"],
+    "repositoryUrl": "https://github.com/Sastiazaran/AdvancedParallelProgramming"
+  },
+  {
+    "slug": "naviplaza",
+    "title": "Naviplaza",
+    "description": {
+      "en": "Final project for parallel programming.",
+      "es": "Proyecto final de la clase de programación paralela."
+    },
+    "tech": ["Java"],
+    "repositoryUrl": "https://github.com/Sastiazaran/Naviplaza"
+  },
+  {
+    "slug": "d3labs",
+    "title": "D3Labs",
+    "description": {
+      "en": "D3 labs for graphic simulation.",
+      "es": "Laboratorios de D3 para simulación gráfica."
+    },
+    "tech": ["JavaScript", "D3"],
+    "repositoryUrl": "https://github.com/Sastiazaran/D3Labs"
+  },
+  {
+    "slug": "chatrooms",
+    "title": "chatRooms",
+    "description": {
+      "en": "Distributed computing final project.",
+      "es": "Proyecto final de computación distribuida."
+    },
+    "tech": ["Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/chatRooms"
+  },
+  {
+    "slug": "feature-images",
+    "title": "featureImages",
+    "description": {
+      "en": "Program to extract features from images.",
+      "es": "Programa para extraer features de imágenes."
+    },
+    "tech": ["Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/featureImages"
+  },
+  {
+    "slug": "proyecto-sockets",
+    "title": "proyectoSockets",
+    "description": {
+      "en": "Client-server application using sockets.",
+      "es": "Aplicación cliente-servidor usando sockets."
+    },
+    "tech": ["Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/proyectoSockets"
+  },
+  {
+    "slug": "map-database-python",
+    "title": "mapDatabasePython",
+    "description": {
+      "en": "Map project focused on Zapopan data.",
+      "es": "Proyecto de mapas de Zapopan."
+    },
+    "tech": ["Jupyter Notebook", "Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/mapDatabasePython"
+  },
+  {
+    "slug": "tictactoe-python",
+    "title": "tictactoePython",
+    "description": {
+      "en": "Tic Tac Toe in Python with pygame.",
+      "es": "Tic Tac Toe en Python con pygame."
+    },
+    "tech": ["Python", "Pygame"],
+    "repositoryUrl": "https://github.com/Sastiazaran/tictactoePython"
+  },
+  {
+    "slug": "calculadora-android",
+    "title": "calculadoraAndroid",
+    "description": {
+      "en": "Android calculator built with Kotlin.",
+      "es": "Calculadora Android hecha en Kotlin."
+    },
+    "tech": ["Kotlin", "Android"],
+    "repositoryUrl": "https://github.com/Sastiazaran/calculadoraAndroid"
+  },
+  {
+    "slug": "login-android",
+    "title": "loginAndroid",
+    "description": {
+      "en": "Android Studio login application.",
+      "es": "Aplicación de login en Android Studio."
+    },
+    "tech": ["Kotlin", "Android"],
+    "repositoryUrl": "https://github.com/Sastiazaran/loginAndroid"
+  },
+  {
+    "slug": "short-path",
+    "title": "shortPath",
+    "description": {
+      "en": "A* pathfinding in Unity.",
+      "es": "Algoritmo A* en Unity para ruta más corta."
+    },
+    "tech": ["C#", "Unity"],
+    "repositoryUrl": "https://github.com/Sastiazaran/shortPath"
+  },
+  {
+    "slug": "casino-tracker",
+    "title": "casinoTracker",
+    "description": {
+      "en": "Python project for tracking data.",
+      "es": "Proyecto en Python para seguimiento de datos."
+    },
+    "tech": ["Python"],
+    "repositoryUrl": "https://github.com/Sastiazaran/casinoTracker"
+  }
+]
