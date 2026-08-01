@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { useLocale } from '../../i18n/LocaleContext'
+import { useLocale } from '../../i18n/useLocale'
 import { site } from '../../content/site'
 import { navLinkKeys } from './navLinks'
 

@@ -1,5 +1,5 @@
 import { PillarGrid } from '../components/pillars/PillarGrid'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function PillarsPage() {
   const { t } = useLocale()

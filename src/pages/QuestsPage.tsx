@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { QuestList } from '../components/quests/QuestList'
 import { quests } from '../content/quests'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 import type { QuestStatus } from '../types/content'
 
 type Filter = 'all' | QuestStatus

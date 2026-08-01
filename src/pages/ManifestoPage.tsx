@@ -6,7 +6,7 @@ import {
 } from '../content/manifesto'
 import { profile } from '../content/profile'
 import { site } from '../content/site'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function ManifestoPage() {
   const { t, tx } = useLocale()

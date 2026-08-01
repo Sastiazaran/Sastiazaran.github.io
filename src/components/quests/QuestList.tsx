@@ -1,4 +1,4 @@
-import { useLocale } from '../../i18n/LocaleContext'
+import { useLocale } from '../../i18n/useLocale'
 import type { Quest } from '../../types/content'
 import { getPillar } from '../../content/pillars'
 

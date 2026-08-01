@@ -1,5 +1,5 @@
 import projects from '../../content/projects.json'
-import { useLocale } from '../../i18n/LocaleContext'
+import { useLocale } from '../../i18n/useLocale'
 import type { ProjectItem } from '../../types/content'
 
 const projectList = projects as ProjectItem[]

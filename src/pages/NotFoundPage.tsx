@@ -1,5 +1,5 @@
 import { ButtonLink } from '../components/common/ButtonLink'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function NotFoundPage() {
   const { t } = useLocale()

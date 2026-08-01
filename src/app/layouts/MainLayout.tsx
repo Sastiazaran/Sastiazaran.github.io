@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Navbar } from '../../components/navigation/Navbar'
-import { useLocale } from '../../i18n/LocaleContext'
+import { useLocale } from '../../i18n/useLocale'
 import { profile } from '../../content/profile'
 import { site } from '../../content/site'
 

@@ -1,24 +1,9 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  type ReactNode,
-} from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import type { Locale, LocalizedString } from '../types/content'
-import { dictionaries, type Dictionary } from './dictionaries'
+import { dictionaries } from './dictionaries'
+import { LocaleContext } from './locale-context'
 
 const STORAGE_KEY = 'side-quest-locale'
-
-type LocaleContextValue = {
-  locale: Locale
-  setLocale: (locale: Locale) => void
-  toggleLocale: () => void
-  t: Dictionary
-  tx: (value: LocalizedString) => string
-}
-
-const LocaleContext = createContext<LocaleContextValue | null>(null)
 
 function readInitialLocale(): Locale {
   if (typeof window === 'undefined') return 'en'
@@ -52,10 +37,4 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
       {children}
     </LocaleContext.Provider>
   )
-}
-
-export function useLocale() {
-  const ctx = useContext(LocaleContext)
-  if (!ctx) throw new Error('useLocale must be used within LocaleProvider')
-  return ctx
 }

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { pillars } from '../../content/pillars'
-import { useLocale } from '../../i18n/LocaleContext'
+import { useLocale } from '../../i18n/useLocale'
 import { PillarIconMark } from '../icons/PillarIcons'
 
 export function PillarGrid() {

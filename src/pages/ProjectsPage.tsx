@@ -1,5 +1,5 @@
 import { ProjectGrid } from '../features/projects/ProjectGrid'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function ProjectsPage() {
   const { t } = useLocale()

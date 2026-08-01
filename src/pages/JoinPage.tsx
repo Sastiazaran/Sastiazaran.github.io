@@ -2,7 +2,7 @@ import { ButtonLink } from '../components/common/ButtonLink'
 import { eventIdeas, monthlyEvents } from '../content/events'
 import { ranks } from '../content/ranks'
 import { site } from '../content/site'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function JoinPage() {
   const { t, tx } = useLocale()

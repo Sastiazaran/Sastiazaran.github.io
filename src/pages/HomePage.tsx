@@ -4,7 +4,7 @@ import { PillarGrid } from '../components/pillars/PillarGrid'
 import { QuestList } from '../components/quests/QuestList'
 import { latestQuests } from '../content/quests'
 import { site } from '../content/site'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function HomePage() {
   const { t, tx } = useLocale()

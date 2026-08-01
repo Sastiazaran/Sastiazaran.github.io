@@ -5,7 +5,7 @@ import { QuestList } from '../components/quests/QuestList'
 import { getPillar } from '../content/pillars'
 import { quests } from '../content/quests'
 import { site } from '../content/site'
-import { useLocale } from '../i18n/LocaleContext'
+import { useLocale } from '../i18n/useLocale'
 
 export function PillarPage() {
   const { slug = '' } = useParams()
