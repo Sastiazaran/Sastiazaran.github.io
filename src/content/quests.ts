@@ -1,13 +1,47 @@
 import type { Quest } from '../types/content'
 
 /**
- * Featured personal projects only. Verified against public GitHub READMEs
- * (August 2026). Class homework and the rest of the public repos stay off this list.
+ * Interview-facing personal products only. Verified against public GitHub
+ * READMEs (August 2026). Demo URLs only where a public page actually loads.
+ * Class homework stays off this list.
  */
 export const quests: Quest[] = [
   {
+    id: 'bionic-reading',
+    status: 'live',
+    featured: true,
+    title: {
+      en: 'Bionic Reading',
+      es: 'Lector biónico',
+    },
+    summary: {
+      en: 'Drop a PDF, Word, Markdown, or text file and turn it into bionic reading — entirely in the browser.',
+      es: 'Suelta un PDF, Word, Markdown o texto y conviértelo en lectura biónica, todo en el navegador.',
+    },
+    tech: ['TypeScript', 'Vite'],
+    repositoryUrl: 'https://github.com/Sastiazaran/BionicReading',
+    demoUrl: 'https://lectura-bionica.vercel.app',
+  },
+  {
+    id: 'watchlist-movie-selector',
+    status: 'live',
+    featured: true,
+    title: {
+      en: 'Watchlist Movie Selector',
+      es: 'Watchlist Movie Selector',
+    },
+    summary: {
+      en: 'Local-first spinner for when you do not know what to watch. Movies, TV, anime, and cartoons stay in this browser.',
+      es: 'Ruleta local-first para cuando no sabes qué ver. Cine, series, anime y caricaturas se quedan en este navegador.',
+    },
+    tech: ['TypeScript', 'Next.js'],
+    repositoryUrl: 'https://github.com/Sastiazaran/WatchlistMovieSelector',
+    demoUrl: 'https://watchlist-movie-selector.vercel.app',
+  },
+  {
     id: 'kanji-reader',
     status: 'in-progress',
+    featured: true,
     title: {
       en: 'KanjiReader',
       es: 'KanjiReader',
@@ -34,34 +68,18 @@ export const quests: Quest[] = [
     repositoryUrl: 'https://github.com/Sastiazaran/PersonalFinanceHub',
   },
   {
-    id: 'bionic-reading',
-    status: 'live',
+    id: 'suno-prompt-generator',
+    status: 'in-progress',
     title: {
-      en: 'Bionic Reading',
-      es: 'Lector biónico',
+      en: 'Suno Prompt Generator',
+      es: 'Suno Prompt Generator',
     },
     summary: {
-      en: 'Drop a PDF, Word, Markdown, or text file and turn it into bionic reading — entirely in the browser.',
-      es: 'Suelta un PDF, Word, Markdown o texto y conviértelo en lectura biónica, todo en el navegador.',
+      en: 'Local studio that turns a song brief into Suno-ready packages: style prompt, lyrics, and a negative prompt.',
+      es: 'Estudio local que convierte un brief de canción en paquetes para Suno: prompt de estilo, letras y prompt negativo.',
     },
     tech: ['TypeScript', 'Vite'],
-    repositoryUrl: 'https://github.com/Sastiazaran/BionicReading',
-    demoUrl: 'https://lectura-bionica.vercel.app',
-  },
-  {
-    id: 'watchlist-movie-selector',
-    status: 'live',
-    title: {
-      en: 'Watchlist Movie Selector',
-      es: 'Watchlist Movie Selector',
-    },
-    summary: {
-      en: 'Local-first spinner for when you do not know what to watch. Movies, TV, anime, and cartoons stay in this browser.',
-      es: 'Ruleta local-first para cuando no sabes qué ver. Cine, series, anime y caricaturas se quedan en este navegador.',
-    },
-    tech: ['TypeScript', 'Next.js'],
-    repositoryUrl: 'https://github.com/Sastiazaran/WatchlistMovieSelector',
-    demoUrl: 'https://watchlist-movie-selector.vercel.app',
+    repositoryUrl: 'https://github.com/Sastiazaran/SunoPromptGenerator',
   },
   {
     id: 'meeting-assistant',
@@ -77,18 +95,6 @@ export const quests: Quest[] = [
     tech: ['Python', 'Whisper', 'Ollama'],
     repositoryUrl: 'https://github.com/Sastiazaran/TextToSpeechRecognition',
   },
-  {
-    id: 'suno-prompt-generator',
-    status: 'in-progress',
-    title: {
-      en: 'Suno Prompt Generator',
-      es: 'Suno Prompt Generator',
-    },
-    summary: {
-      en: 'Local studio that turns a song brief into Suno-ready packages: style prompt, lyrics, and a negative prompt.',
-      es: 'Estudio local que convierte un brief de canción en paquetes para Suno: prompt de estilo, letras y prompt negativo.',
-    },
-    tech: ['TypeScript', 'Vite'],
-    repositoryUrl: 'https://github.com/Sastiazaran/SunoPromptGenerator',
-  },
 ]
+
+export const featuredQuests = quests.filter((quest) => quest.featured)

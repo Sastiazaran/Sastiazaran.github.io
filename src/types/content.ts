@@ -29,12 +29,24 @@ export type Quest = {
   tech: string[]
   repositoryUrl: string
   demoUrl?: string
+  featured?: boolean
+}
+
+export type LogStatus = 'active' | 'completed' | 'discovery' | 'soundtrack'
+
+export type LogEntry = {
+  id: string
+  status: LogStatus
+  title: LocalizedString
+  detail: LocalizedString
+  date: string
 }
 
 export type SiteConfig = {
   brand: string
   tagline: LocalizedString
   supportLine: LocalizedString
+  discordUrl: string
   seo: {
     title: LocalizedString
     description: LocalizedString

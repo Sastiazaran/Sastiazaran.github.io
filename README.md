@@ -33,7 +33,8 @@ GitHub Actions deploys on push to `main` via [`.github/workflows/deploy.yml`](.g
 
 | File | What |
 |------|------|
-| `src/content/site.ts` | Tagline and SEO |
+| `src/content/site.ts` | Tagline, SEO, Discord footer |
 | `src/content/profile.ts` | Name, bio, skills, social links |
-| `src/content/quests.ts` | Featured personal projects |
+| `src/content/quests.ts` | Featured personal software projects |
+| `src/content/log.ts` | IRL quest log |
 | `src/i18n/dictionaries.ts` | UI chrome EN/ES |

@@ -1,15 +1,16 @@
 import type { SiteConfig } from '../types/content'
 
 export const site: SiteConfig = {
-  brand: 'Side Quest',
+  brand: 'Sebastián Astiazarán',
   tagline: {
     en: 'Engineer in computer graphics and systems. Postgraduate in Data Science.',
     es: 'Ingeniero en gráficos por computadora y sistemas. Posgrado en Data Science.',
   },
   supportLine: {
-    en: 'I like music and code. This site is my work — a handful of personal side quests, not a community HQ.',
-    es: 'Me gustan la música y el código. Este sitio es mi trabajo: unas cuantas side quests personales, no un HQ de comunidad.',
+    en: 'I like music and code. This is my character sheet — the software I build and the side quests I live.',
+    es: 'Me gustan la música y el código. Esta es mi ficha de personaje: el software que construyo y las side quests que vivo.',
   },
+  discordUrl: 'https://discord.gg/NJPkYEHsP',
   seo: {
     title: {
       en: 'Sebastián Astiazarán — side quests',

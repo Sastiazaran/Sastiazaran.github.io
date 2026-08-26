@@ -36,6 +36,10 @@ export function MainLayout() {
                 </a>
               </span>
             ))}
+            {' · '}
+            <a className="text-link" href={site.discordUrl} target="_blank" rel="noreferrer">
+              Discord
+            </a>
           </p>
         </div>
       </footer>

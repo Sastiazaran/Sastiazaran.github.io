@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useLocale } from '../../i18n/useLocale'
-import { site } from '../../content/site'
+import { profile } from '../../content/profile'
 import { navLinkKeys } from './navLinks'
 
 export function Navbar() {
@@ -9,7 +9,7 @@ export function Navbar() {
   return (
     <nav className="navbar" aria-label="Primary">
       <NavLink to="/" className="brand">
-        Side <span>Quest</span>
+        Sebastián <span>Astiazarán</span>
       </NavLink>
       <ul className="nav-list">
         {navLinkKeys.map((link) => (
@@ -30,7 +30,7 @@ export function Navbar() {
             type="button"
             className="locale-toggle"
             onClick={toggleLocale}
-            aria-label={`Switch language — ${site.brand}`}
+            aria-label={`Switch language — ${profile.name}`}
           >
             {t.localeToggle}
           </button>
