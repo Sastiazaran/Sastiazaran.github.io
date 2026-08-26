@@ -6,23 +6,15 @@ import type { QuestStatus } from '../types/content'
 
 type Filter = 'all' | QuestStatus
 
-const FILTERS: Filter[] = [
-  'all',
-  'active',
-  'completed',
-  'discovery',
-  'soundtrack',
-  'xp',
-]
+const FILTERS: Filter[] = ['all', 'live', 'in-progress']
 
 export function QuestsPage() {
   const { t } = useLocale()
   const [filter, setFilter] = useState<Filter>('all')
 
   const items = useMemo(() => {
-    const sorted = [...quests].sort((a, b) => b.date.localeCompare(a.date))
-    if (filter === 'all') return sorted
-    return sorted.filter((quest) => quest.status === filter)
+    if (filter === 'all') return quests
+    return quests.filter((quest) => quest.status === filter)
   }, [filter])
 
   return (

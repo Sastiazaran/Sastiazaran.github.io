@@ -6,10 +6,10 @@ import { LocaleContext } from './locale-context'
 const STORAGE_KEY = 'side-quest-locale'
 
 function readInitialLocale(): Locale {
-  if (typeof window === 'undefined') return 'en'
+  if (typeof window === 'undefined') return 'es'
   const stored = window.localStorage.getItem(STORAGE_KEY)
   if (stored === 'en' || stored === 'es') return stored
-  return navigator.language.toLowerCase().startsWith('es') ? 'es' : 'en'
+  return navigator.language.toLowerCase().startsWith('en') ? 'en' : 'es'
 }
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
