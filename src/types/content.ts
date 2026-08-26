@@ -19,7 +19,7 @@ export type ProfileContent = {
   social: SocialLink[]
 }
 
-export type QuestStatus = 'live' | 'in-progress' | 'paused'
+export type QuestStatus = 'live' | 'local' | 'building'
 
 export type Quest = {
   id: string

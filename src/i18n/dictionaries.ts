@@ -27,8 +27,8 @@ export const dictionaries = {
       filters: {
         all: 'All',
         live: 'Live demo',
-        'in-progress': 'In progress',
-        paused: 'Paused',
+        local: 'Local',
+        building: 'Building',
       },
       empty: 'No quests in this filter yet.',
       repo: 'GitHub',
@@ -54,8 +54,8 @@ export const dictionaries = {
     },
     status: {
       live: 'Live demo',
-      'in-progress': 'In progress',
-      paused: 'Paused',
+      local: 'Local',
+      building: 'Building',
     },
     logStatus: {
       active: 'Active',
@@ -92,8 +92,8 @@ export const dictionaries = {
       filters: {
         all: 'Todas',
         live: 'Demo en línea',
-        'in-progress': 'En curso',
-        paused: 'Pausadas',
+        local: 'Local',
+        building: 'En construcción',
       },
       empty: 'Aún no hay quests en este filtro.',
       repo: 'GitHub',
@@ -119,8 +119,8 @@ export const dictionaries = {
     },
     status: {
       live: 'Demo en línea',
-      'in-progress': 'En curso',
-      paused: 'Pausada',
+      local: 'Local',
+      building: 'En construcción',
     },
     logStatus: {
       active: 'Activa',
