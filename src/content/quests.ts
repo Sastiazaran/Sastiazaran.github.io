@@ -1,122 +1,94 @@
 import type { Quest } from '../types/content'
 
+/**
+ * Featured personal projects only. Verified against public GitHub READMEs
+ * (August 2026). Class homework and the rest of the public repos stay off this list.
+ */
 export const quests: Quest[] = [
   {
-    id: 'bench-press-progress',
-    status: 'active',
+    id: 'kanji-reader',
+    status: 'in-progress',
     title: {
-      en: 'Add 5 kg to bench press',
-      es: 'Subir 5 kg en press de banca',
+      en: 'KanjiReader',
+      es: 'KanjiReader',
     },
-    detail: {
-      en: 'Consistent progressive overload this training block. Log every session.',
-      es: 'Sobrecarga progresiva consistente en este bloque. Registrar cada sesión.',
+    summary: {
+      en: 'Open-source gamified kanji learning: school-year worlds, mnemonic stories, quizzes, and Leitner SRS in the browser.',
+      es: 'App open source para aprender kanji jugando: mundos por curso escolar, historias mnemotécnicas, quizzes y SRS Leitner en el navegador.',
     },
-    pillarSlug: 'level-up',
-    date: '2026-07-01',
+    tech: ['React', 'TypeScript', 'Vite', 'Dexie'],
+    repositoryUrl: 'https://github.com/Sastiazaran/KanjiReader',
   },
   {
-    id: 'fmab-complete',
-    status: 'completed',
+    id: 'personal-finance-hub',
+    status: 'in-progress',
     title: {
-      en: 'Finished Fullmetal Alchemist: Brotherhood',
-      es: 'Terminé Fullmetal Alchemist: Brotherhood',
+      en: 'Personal Finance Hub',
+      es: 'Personal Finance Hub',
     },
-    detail: {
-      en: 'A classic arc completed — themes of cost, growth, and found family.',
-      es: 'Un clásico completado — temas de costo, crecimiento y familia elegida.',
+    summary: {
+      en: 'Local-first finance hub: import account-statement PDFs, categorize spending, and project debts. Data stays in the browser.',
+      es: 'Hub local de finanzas: importa estados de cuenta en PDF, categoriza gastos y proyecta deudas. Los datos se quedan en el navegador.',
     },
-    pillarSlug: 'side-quests',
-    date: '2026-06-18',
+    tech: ['React', 'TypeScript', 'Vite', 'Dexie'],
+    repositoryUrl: 'https://github.com/Sastiazaran/PersonalFinanceHub',
   },
   {
-    id: 'ramen-discovery',
-    status: 'discovery',
+    id: 'bionic-reading',
+    status: 'live',
     title: {
-      en: 'Learned homemade ramen broth',
-      es: 'Aprendí a hacer caldo de ramen casero',
+      en: 'Bionic Reading',
+      es: 'Lector biónico',
     },
-    detail: {
-      en: 'Patience, bones, and aroma — cooking as a side quest with edible loot.',
-      es: 'Paciencia, huesos y aroma — cocinar como side quest con loot comestible.',
+    summary: {
+      en: 'Drop a PDF, Word, Markdown, or text file and turn it into bionic reading — entirely in the browser.',
+      es: 'Suelta un PDF, Word, Markdown o texto y conviértelo en lectura biónica, todo en el navegador.',
     },
-    pillarSlug: 'exploration',
-    date: '2026-06-22',
+    tech: ['TypeScript', 'Vite'],
+    repositoryUrl: 'https://github.com/Sastiazaran/BionicReading',
+    demoUrl: 'https://lectura-bionica.vercel.app',
   },
   {
-    id: 'night-drive-ost',
-    status: 'soundtrack',
+    id: 'watchlist-movie-selector',
+    status: 'live',
     title: {
-      en: 'Night drive playlist locked in',
-      es: 'Playlist de manejo nocturno lista',
+      en: 'Watchlist Movie Selector',
+      es: 'Watchlist Movie Selector',
     },
-    detail: {
-      en: 'The songs that turn empty roads into cinematic main quests.',
-      es: 'Las canciones que convierten carreteras vacías en misiones principales cinematográficas.',
+    summary: {
+      en: 'Local-first spinner for when you do not know what to watch. Movies, TV, anime, and cartoons stay in this browser.',
+      es: 'Ruleta local-first para cuando no sabes qué ver. Cine, series, anime y caricaturas se quedan en este navegador.',
     },
-    pillarSlug: 'soundtrack',
-    date: '2026-07-10',
+    tech: ['TypeScript', 'Next.js'],
+    repositoryUrl: 'https://github.com/Sastiazaran/WatchlistMovieSelector',
+    demoUrl: 'https://watchlist-movie-selector.vercel.app',
   },
   {
-    id: 'side-quest-site',
-    status: 'xp',
+    id: 'meeting-assistant',
+    status: 'in-progress',
     title: {
-      en: 'Shipped the Side Quest HQ site',
-      es: 'Publiqué el sitio HQ de Side Quest',
+      en: 'Meeting Assistant',
+      es: 'Meeting Assistant',
     },
-    detail: {
-      en: 'Turned a personal footprint into a community philosophy on GitHub Pages.',
-      es: 'Convertí una huella personal en una filosofía de comunidad en GitHub Pages.',
+    summary: {
+      en: 'Local open-source meeting helper: capture system audio, transcribe with Whisper, summarize with Ollama, export notes.',
+      es: 'Asistente de reuniones local y open source: captura el audio del sistema, transcribe con Whisper, resume con Ollama y exporta notas.',
     },
-    pillarSlug: 'skill-tree',
-    date: '2026-07-31',
+    tech: ['Python', 'Whisper', 'Ollama'],
+    repositoryUrl: 'https://github.com/Sastiazaran/TextToSpeechRecognition',
   },
   {
-    id: 'sleep-ritual',
-    status: 'active',
+    id: 'suno-prompt-generator',
+    status: 'in-progress',
     title: {
-      en: 'Protect a 7-hour sleep streak',
-      es: 'Proteger una racha de 7 horas de sueño',
+      en: 'Suno Prompt Generator',
+      es: 'Suno Prompt Generator',
     },
-    detail: {
-      en: 'Recovery is part of Level Up — not optional DLC.',
-      es: 'La recuperación es parte de Level Up — no es DLC opcional.',
+    summary: {
+      en: 'Local studio that turns a song brief into Suno-ready packages: style prompt, lyrics, and a negative prompt.',
+      es: 'Estudio local que convierte un brief de canción en paquetes para Suno: prompt de estilo, letras y prompt negativo.',
     },
-    pillarSlug: 'level-up',
-    date: '2026-07-15',
-  },
-  {
-    id: 'data-science-arc',
-    status: 'xp',
-    title: {
-      en: 'Deepened the Data Science skill branch',
-      es: 'Profundicé la rama de Data Science',
-    },
-    detail: {
-      en: 'Postgraduate arc stacking analysis skills onto systems + graphics.',
-      es: 'Arco de posgrado sumando análisis sobre sistemas + gráficos.',
-    },
-    pillarSlug: 'skill-tree',
-    date: '2026-05-01',
-  },
-  {
-    id: 'reflection-character',
-    status: 'discovery',
-    title: {
-      en: 'Reflection: side quests rewrite the main plot',
-      es: 'Reflexión: las side quests reescriben la trama principal',
-    },
-    detail: {
-      en: 'Hobbies are not distractions when they compound into identity.',
-      es: 'Los hobbies no son distracciones cuando se acumulan en identidad.',
-    },
-    pillarSlug: 'guild-hall',
-    date: '2026-07-20',
+    tech: ['TypeScript', 'Vite'],
+    repositoryUrl: 'https://github.com/Sastiazaran/SunoPromptGenerator',
   },
 ]
-
-export function latestQuests(limit = 4) {
-  return [...quests]
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, limit)
-}

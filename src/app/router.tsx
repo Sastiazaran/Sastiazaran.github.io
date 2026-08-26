@@ -1,12 +1,8 @@
-import { createHashRouter } from 'react-router-dom'
+import { Navigate, createHashRouter } from 'react-router-dom'
 import { MainLayout } from './layouts/MainLayout'
+import { AboutPage } from '../pages/AboutPage'
 import { HomePage } from '../pages/HomePage'
-import { JoinPage } from '../pages/JoinPage'
-import { ManifestoPage } from '../pages/ManifestoPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
-import { PillarPage } from '../pages/PillarPage'
-import { PillarsPage } from '../pages/PillarsPage'
-import { ProjectsPage } from '../pages/ProjectsPage'
 import { QuestsPage } from '../pages/QuestsPage'
 
 export const router = createHashRouter([
@@ -16,11 +12,12 @@ export const router = createHashRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'quests', element: <QuestsPage /> },
-      { path: 'pillars', element: <PillarsPage /> },
-      { path: 'pillars/:slug', element: <PillarPage /> },
-      { path: 'projects', element: <ProjectsPage /> },
-      { path: 'manifesto', element: <ManifestoPage /> },
-      { path: 'join', element: <JoinPage /> },
+      { path: 'about', element: <AboutPage /> },
+      { path: 'manifesto', element: <Navigate to="/about" replace /> },
+      { path: 'projects', element: <Navigate to="/quests" replace /> },
+      { path: 'join', element: <Navigate to="/" replace /> },
+      { path: 'pillars', element: <Navigate to="/" replace /> },
+      { path: 'pillars/:slug', element: <Navigate to="/" replace /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

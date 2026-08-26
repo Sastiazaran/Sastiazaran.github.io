@@ -1,6 +1,5 @@
 import { useLocale } from '../../i18n/useLocale'
 import type { Quest } from '../../types/content'
-import { getPillar } from '../../content/pillars'
 
 export function QuestList({ items }: { items: Quest[] }) {
   const { t, tx } = useLocale()
@@ -11,20 +10,42 @@ export function QuestList({ items }: { items: Quest[] }) {
 
   return (
     <div className="quest-list">
-      {items.map((quest) => {
-        const pillar = getPillar(quest.pillarSlug)
-        return (
-          <article key={quest.id} className="quest-row">
-            <div className="quest-meta">
-              <span className="quest-status">{t.status[quest.status]}</span>
-              {pillar ? <span>{tx(pillar.title)}</span> : null}
-              <time dateTime={quest.date}>{quest.date}</time>
-            </div>
-            <h3>{tx(quest.title)}</h3>
-            <p>{tx(quest.detail)}</p>
-          </article>
-        )
-      })}
+      {items.map((quest) => (
+        <article key={quest.id} className="quest-row">
+          <div className="quest-meta">
+            <span className="quest-status">{t.status[quest.status]}</span>
+          </div>
+          <h3>{tx(quest.title)}</h3>
+          <p>{tx(quest.summary)}</p>
+          <div className="chip-list">
+            {quest.tech.map((tech) => (
+              <span key={tech} className="chip">
+                {tech}
+              </span>
+            ))}
+          </div>
+          <div className="quest-links">
+            <a
+              className="text-link"
+              href={quest.repositoryUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t.quests.repo}
+            </a>
+            {quest.demoUrl ? (
+              <a
+                className="text-link"
+                href={quest.demoUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t.quests.demo}
+              </a>
+            ) : null}
+          </div>
+        </article>
+      ))}
     </div>
   )
 }

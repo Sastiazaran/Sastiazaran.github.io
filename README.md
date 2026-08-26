@@ -1,16 +1,16 @@
-# Side Quest
+# Sebastián Astiazarán — side quests
 
-Personal HQ and community face for **Side Quest** — build your character IRL.
+Personal site for **Sebastián Astiazarán** (Guadalajara): who he is, and a short list of his own side quests.
 
-Live site: [https://Sastiazaran.github.io](https://Sastiazaran.github.io)
+Live site: [https://sastiazaran.github.io](https://sastiazaran.github.io)
 
-Discord: [https://discord.gg/NJPkYEHsP](https://discord.gg/NJPkYEHsP)
+This repo (`Sastiazaran.github.io`) is what GitHub Pages serves. The Expo app in [SideQuest](https://github.com/Sastiazaran/SideQuest) is a separate companion — not the source of this website.
 
 ## Stack
 
 - React 19 + TypeScript + Vite
 - HashRouter for GitHub Pages
-- Local content (TS/JSON) + bilingual EN/ES
+- Local content (TS) + bilingual EN/ES
 
 ## Develop
 
@@ -33,12 +33,7 @@ GitHub Actions deploys on push to `main` via [`.github/workflows/deploy.yml`](.g
 
 | File | What |
 |------|------|
-| `src/content/site.ts` | Brand, Discord, SEO |
-| `src/content/pillars.ts` | Community pillars |
-| `src/content/quests.ts` | Quest log entries |
-| `src/content/manifesto.ts` | Manifesto copy |
-| `src/content/ranks.ts` | Guild ranks |
-| `src/content/events.ts` | Monthly missions |
-| `src/content/profile.ts` | Founder bio |
-| `src/content/projects.json` | GitHub projects |
+| `src/content/site.ts` | Tagline and SEO |
+| `src/content/profile.ts` | Name, bio, skills, social links |
+| `src/content/quests.ts` | Featured personal projects |
 | `src/i18n/dictionaries.ts` | UI chrome EN/ES |
