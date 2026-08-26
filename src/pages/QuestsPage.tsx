@@ -6,7 +6,7 @@ import type { QuestStatus } from '../types/content'
 
 type Filter = 'all' | QuestStatus
 
-const FILTERS: Filter[] = ['all', 'live', 'in-progress']
+const FILTERS: Filter[] = ['all', 'live', 'local']
 
 export function QuestsPage() {
   const { t } = useLocale()

@@ -5,6 +5,7 @@ export const dictionaries = {
     nav: {
       home: 'Home',
       quests: 'Side quests',
+      log: 'Log',
       about: 'About',
     },
     home: {
@@ -13,21 +14,30 @@ export const dictionaries = {
       about: 'About',
       github: 'GitHub',
       questsTitle: 'Side quests',
-      questsSub: 'Personal projects I actually want you to open. Honest status — not a shipped-product pitch.',
+      questsSub: 'Software I actually want you to open. Honest status — not a shipped-product pitch.',
+      allQuests: 'All software quests',
+      logTitle: 'IRL log',
+      logSub: 'A few of my own side quests outside the repo list.',
+      openLog: 'Open full log',
     },
     quests: {
       title: 'Side quests',
       subtitle:
-        'A short list. Class repos and the rest of GitHub stay off this page.',
+        'Personal products. Class repos stay off this page.',
       filters: {
         all: 'All',
         live: 'Live demo',
-        'in-progress': 'In progress',
-        paused: 'Paused',
+        local: 'Local',
+        building: 'Building',
       },
       empty: 'No quests in this filter yet.',
       repo: 'GitHub',
       demo: 'Live demo',
+    },
+    log: {
+      title: 'IRL log',
+      subtitle: 'Gym, food, shows, music — my side quests, not a guild feed.',
+      empty: 'No log entries yet.',
     },
     about: {
       title: 'About',
@@ -44,8 +54,14 @@ export const dictionaries = {
     },
     status: {
       live: 'Live demo',
-      'in-progress': 'In progress',
-      paused: 'Paused',
+      local: 'Local',
+      building: 'Building',
+    },
+    logStatus: {
+      active: 'Active',
+      completed: 'Done',
+      discovery: 'Discovery',
+      soundtrack: 'Soundtrack',
     },
     localeToggle: 'ES',
   },
@@ -53,6 +69,7 @@ export const dictionaries = {
     nav: {
       home: 'Inicio',
       quests: 'Side quests',
+      log: 'Bitácora',
       about: 'Sobre mí',
     },
     home: {
@@ -62,21 +79,30 @@ export const dictionaries = {
       github: 'GitHub',
       questsTitle: 'Side quests',
       questsSub:
-        'Proyectos personales que sí quiero que abras. Estado honesto — no un pitch de producto terminado.',
+        'Software que sí quiero que abras. Estado honesto — no un pitch de producto terminado.',
+      allQuests: 'Todas las quests de software',
+      logTitle: 'Bitácora IRL',
+      logSub: 'Algunas side quests mías fuera de la lista de repos.',
+      openLog: 'Abrir bitácora',
     },
     quests: {
       title: 'Side quests',
       subtitle:
-        'Una lista corta. Los repos de clase y el resto de GitHub se quedan fuera.',
+        'Productos personales. Los repos de clase se quedan fuera.',
       filters: {
         all: 'Todas',
         live: 'Demo en línea',
-        'in-progress': 'En curso',
-        paused: 'Pausadas',
+        local: 'Local',
+        building: 'En construcción',
       },
       empty: 'Aún no hay quests en este filtro.',
       repo: 'GitHub',
       demo: 'Demo en línea',
+    },
+    log: {
+      title: 'Bitácora IRL',
+      subtitle: 'Gym, comida, series, música — mis side quests, no un feed de gremio.',
+      empty: 'Aún no hay entradas.',
     },
     about: {
       title: 'Sobre mí',
@@ -93,8 +119,14 @@ export const dictionaries = {
     },
     status: {
       live: 'Demo en línea',
-      'in-progress': 'En curso',
-      paused: 'Pausada',
+      local: 'Local',
+      building: 'En construcción',
+    },
+    logStatus: {
+      active: 'Activa',
+      completed: 'Hecha',
+      discovery: 'Descubrimiento',
+      soundtrack: 'Soundtrack',
     },
     localeToggle: 'EN',
   },

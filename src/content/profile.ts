@@ -8,8 +8,8 @@ export const profile: ProfileContent = {
   },
   location: 'Guadalajara, Jalisco, Mexico',
   bio: {
-    en: 'I build software around graphics, systems, and data — and I keep a small set of personal side quests on the side: learning tools, local-first apps, music, and experiments I actually use. GitHub is where the code lives; this page is the short list I want you to look at.',
-    es: 'Construyo software alrededor de gráficos, sistemas y datos — y mantengo un puñado de side quests personales: herramientas para aprender, apps local-first, música y experimentos que sí uso. GitHub es donde vive el código; esta página es la lista corta que quiero que mires.',
+    en: 'I build software around graphics, systems, and data. Side quests — misiones secundarias — is how I talk about everything I make, including an offline iPhone tracker that is a separate app from this site. GitHub is the code; this page is the short list I want you to look at.',
+    es: 'Construyo software alrededor de gráficos, sistemas y datos. Side quests — misiones secundarias — es cómo hablo de todo lo que hago, incluido un tracker offline para iPhone que es otra app, no este sitio. GitHub es el código; esta página es la lista corta que quiero que mires.',
   },
   skills: [
     'TypeScript',
@@ -21,6 +21,6 @@ export const profile: ProfileContent = {
   ],
   social: [
     { label: 'GitHub', url: 'https://github.com/Sastiazaran' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/sastiazaran/' },
+    { label: 'LinkedIn', url: 'https://linkedin.com/in/sastiazaran' },
   ],
 }

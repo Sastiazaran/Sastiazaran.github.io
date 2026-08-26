@@ -1,8 +1,10 @@
 import { ButtonLink } from '../components/common/ButtonLink'
 import { Section } from '../components/common/Section'
+import { LogList } from '../components/quests/LogList'
 import { QuestList } from '../components/quests/QuestList'
+import { latestLog } from '../content/log'
 import { profile } from '../content/profile'
-import { quests } from '../content/quests'
+import { featuredQuests } from '../content/quests'
 import { site } from '../content/site'
 import { useLocale } from '../i18n/useLocale'
 
@@ -29,7 +31,17 @@ export function HomePage() {
       </section>
 
       <Section title={t.home.questsTitle} subtitle={t.home.questsSub} id="quests">
-        <QuestList items={quests} />
+        <QuestList items={featuredQuests} />
+        <div className="hero-actions">
+          <ButtonLink to="/quests" label={t.home.allQuests} />
+        </div>
+      </Section>
+
+      <Section title={t.home.logTitle} subtitle={t.home.logSub} id="log">
+        <LogList items={latestLog(3)} />
+        <div className="hero-actions">
+          <ButtonLink to="/log" label={t.home.openLog} />
+        </div>
       </Section>
     </>
   )

@@ -2,6 +2,7 @@ import { Navigate, createHashRouter } from 'react-router-dom'
 import { MainLayout } from './layouts/MainLayout'
 import { AboutPage } from '../pages/AboutPage'
 import { HomePage } from '../pages/HomePage'
+import { LogPage } from '../pages/LogPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { QuestsPage } from '../pages/QuestsPage'
 
@@ -12,6 +13,7 @@ export const router = createHashRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'quests', element: <QuestsPage /> },
+      { path: 'log', element: <LogPage /> },
       { path: 'about', element: <AboutPage /> },
       { path: 'manifesto', element: <Navigate to="/about" replace /> },
       { path: 'projects', element: <Navigate to="/quests" replace /> },
