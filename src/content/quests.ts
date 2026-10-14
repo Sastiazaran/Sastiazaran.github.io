@@ -71,6 +71,21 @@ export const quests: Quest[] = [
     demoUrl: 'https://casino-tracker-uif.vercel.app',
   },
   {
+    id: 'gold-model',
+    status: 'local',
+    featured: true,
+    title: {
+      en: 'GoldModel',
+      es: 'GoldModel',
+    },
+    summary: {
+      en: 'Python gold-price regression. A fair-value model (10y real yield, USD index, Brent, VIX, inflation) with Newey-West errors and walk-forward Ridge forecasts against a random walk, on about 20 years of daily data from yfinance and FRED. Gold is about 42% above fair value, and the forecasts don\'t beat a random walk. No live demo.',
+      es: 'Regresión en Python del precio del oro. Un modelo de valor justo (rendimiento real a 10 años, índice del dólar, Brent, VIX e inflación) con errores Newey-West y pronósticos Ridge walk-forward frente a un paseo aleatorio, con unos 20 años de datos diarios de yfinance y FRED. El oro está alrededor de un 42% por encima del valor justo, y los pronósticos no superan a un paseo aleatorio. Sin demo en línea.',
+    },
+    tech: ['Python', 'pandas', 'statsmodels', 'scikit-learn'],
+    repositoryUrl: 'https://github.com/Sastiazaran/GoldModel',
+  },
+  {
     id: 'personal-finance-hub',
     status: 'local',
     title: {
