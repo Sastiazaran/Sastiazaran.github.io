@@ -79,8 +79,8 @@ export const quests: Quest[] = [
       es: 'GoldModel',
     },
     summary: {
-      en: 'Python gold-price regression. A fair-value model (10y real yield, USD index, Brent, VIX, inflation) with Newey-West errors and walk-forward Ridge forecasts against a random walk, on about 20 years of daily data from yfinance and FRED. Gold is about 42% above fair value, and the forecasts don\'t beat a random walk. No live demo.',
-      es: 'Regresión en Python del precio del oro. Un modelo de valor justo (rendimiento real a 10 años, índice del dólar, Brent, VIX e inflación) con errores Newey-West y pronósticos Ridge walk-forward frente a un paseo aleatorio, con unos 20 años de datos diarios de yfinance y FRED. El oro está alrededor de un 42% por encima del valor justo, y los pronósticos no superan a un paseo aleatorio. Sin demo en línea.',
+      en: 'Econometric fair-value analysis of gold, not a price predictor: real yield, the dollar, Brent, VIX, inflation, central-bank buying, GLD holdings, and a geopolitical risk index, with rolling coefficients, Engle-Granger and Johansen tests, and walk-forward Ridge and gradient boosting versus a random walk — also in MXN per gram. Out-of-sample R² versus a random walk is slightly negative. No live demo.',
+      es: 'Análisis econométrico de valor justo del oro, no un predictor de precio: rendimiento real, dólar, Brent, VIX, inflación, compras de oro de bancos centrales, tenencias de GLD y un índice de riesgo geopolítico, con coeficientes en ventana móvil, pruebas de Engle-Granger y Johansen, y pronósticos walk-forward de Ridge y gradient boosting frente a un paseo aleatorio — también en MXN por gramo. El R² fuera de muestra frente al paseo aleatorio es ligeramente negativo. Sin demo en línea.',
     },
     tech: ['Python', 'pandas', 'statsmodels', 'scikit-learn'],
     repositoryUrl: 'https://github.com/Sastiazaran/GoldModel',
