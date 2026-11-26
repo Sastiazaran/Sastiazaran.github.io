@@ -15,18 +15,29 @@ export function HomePage() {
   return (
     <>
       <section className="hero">
-        <p className="kicker">{t.home.kicker}</p>
-        <h1 className="brand-hero">
-          Sebastián <span>Astiazarán</span>
-        </h1>
-        <p className="hero-tagline">{tx(site.tagline)}</p>
-        <p>{tx(site.supportLine)}</p>
-        <div className="hero-actions">
-          <ButtonLink to="/quests" label={t.home.exploreQuests} variant="primary" />
-          <ButtonLink to="/about" label={t.home.about} />
-          {github ? (
-            <ButtonLink to={github.url} label={t.home.github} external />
-          ) : null}
+        <div className="hero-layout">
+          <div>
+            <p className="kicker">{t.home.kicker}</p>
+            <h1 className="brand-hero">
+              Sebastián <span>Astiazarán</span>
+            </h1>
+            <p className="hero-tagline">{tx(site.tagline)}</p>
+            <p>{tx(site.supportLine)}</p>
+            <div className="hero-actions">
+              <ButtonLink to="/quests" label={t.home.exploreQuests} variant="primary" />
+              <ButtonLink to="/about" label={t.home.about} />
+              {github ? (
+                <ButtonLink to={github.url} label={t.home.github} external />
+              ) : null}
+            </div>
+          </div>
+          <img
+            className="hero-portrait"
+            src={profile.portrait}
+            alt={profile.name}
+            width={200}
+            height={200}
+          />
         </div>
       </section>
 

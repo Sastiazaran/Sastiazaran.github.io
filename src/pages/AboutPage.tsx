@@ -6,10 +6,19 @@ export function AboutPage() {
 
   return (
     <>
-      <header className="page-intro">
-        <p className="kicker">{profile.location}</p>
-        <h1>{profile.name}</h1>
-        <p>{tx(profile.role)}</p>
+      <header className="page-intro about-intro">
+        <img
+          className="hero-portrait"
+          src={profile.portrait}
+          alt={profile.name}
+          width={200}
+          height={200}
+        />
+        <div>
+          <p className="kicker">{profile.location}</p>
+          <h1>{profile.name}</h1>
+          <p>{tx(profile.role)}</p>
+        </div>
       </header>
 
       <div className="prose">

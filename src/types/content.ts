@@ -14,6 +14,7 @@ export type ProfileContent = {
   name: string
   role: LocalizedString
   location: string
+  portrait: string
   bio: LocalizedString
   skills: string[]
   social: SocialLink[]
@@ -21,15 +22,22 @@ export type ProfileContent = {
 
 export type QuestStatus = 'live' | 'local' | 'building'
 
+export type QuestMedia = {
+  poster: string
+  mobilePoster?: string
+  video?: string
+}
+
 export type Quest = {
   id: string
   status: QuestStatus
   title: LocalizedString
   summary: LocalizedString
   tech: string[]
-  repositoryUrl: string
+  repositoryUrl?: string
   demoUrl?: string
   featured?: boolean
+  media?: QuestMedia
 }
 
 export type LogStatus = 'active' | 'completed' | 'discovery' | 'soundtrack'
