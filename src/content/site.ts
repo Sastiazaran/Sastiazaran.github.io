@@ -3,8 +3,8 @@ import type { SiteConfig } from '../types/content'
 export const site: SiteConfig = {
   brand: 'Sebastián Astiazarán',
   tagline: {
-    en: 'Engineer in computer graphics and systems. Postgraduate in Data Science.',
-    es: 'Ingeniero en gráficos por computadora y sistemas. Posgrado en Data Science.',
+    en: 'Data Scientist & Data Engineer | Software Developer · QA Automation',
+    es: 'Científico de datos y Data Engineer | Desarrollador de software · QA Automation',
   },
   supportLine: {
     en: 'I like music and code. This is my character sheet — the software I build and the side quests I live.',
@@ -17,8 +17,8 @@ export const site: SiteConfig = {
       es: 'Sebastián Astiazarán — side quests',
     },
     description: {
-      en: 'Personal site of Sebastián Astiazarán: computer graphics and systems engineer in Guadalajara. A few real projects — kanji learning, finance, reading, watchlists, and more.',
-      es: 'Sitio personal de Sebastián Astiazarán: ingeniero en gráficos y sistemas en Guadalajara. Unos cuantos proyectos reales — kanji, finanzas, lectura, watchlists y más.',
+      en: 'Personal site of Sebastián Astiazarán in Guadalajara: data scientist, data engineer, software developer, and QA automation. Side quests include an interview game, kanji, bionic reading, a 3D motorcycle, and historical sports odds.',
+      es: 'Sitio personal de Sebastián Astiazarán en Guadalajara: científico de datos, data engineer, desarrollador de software y QA automation. Side quests: un juego de entrevistas, kanji, lectura biónica, una moto 3D y cuotas deportivas históricas.',
     },
   },
 }
